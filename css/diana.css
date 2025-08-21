@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.portfoliotiles {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.portfoliotile {
+  padding: 0;
+}
+
+.filling-image {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.5);
+  align-items: center;
+  justify-content: center;
+  opacity: 0%;
+  transition: opacity ease-in-out 0.25s;
+}
+
+.portfoliotile:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.portfolio-title-holder {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-title {
+  font-weight: 100;
+  font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+}
+
+.main-page-header {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page-header-name {
+  font-weight: 100;
+  color: black;
+  font-size: 5vw;
+  font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
