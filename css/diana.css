@@ -1,20 +1,37 @@
 @charset "UTF-8";
 
-.portfoliotiles {
+.d-portfolio-tiles {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
 
-.portfoliotile {
+.d-portfolio-tile {
   padding: 0;
 }
 
-.filling-image {
+.d-filling-image {
   width: 100%;
   height: auto;
 }
 
-.portfolio-hover {
+.d-portfolio-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.d-art-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.d-card-overlay {
+  top: 0;
+  left: 0;
   display: flex;
   position: absolute;
   width: 100%;
@@ -26,11 +43,11 @@
   transition: opacity ease-in-out 0.25s;
 }
 
-.portfoliotile:hover .portfolio-hover {
+.d-card:hover .d-card-overlay {
   opacity: 1;
 }
 
-.portfolio-title-holder {
+.d-portfolio-title-holder {
   display: flex;
   position: absolute;
   width: 100%;
@@ -39,15 +56,21 @@
   justify-content: center;
 }
 
-.portfolio-title {
+.d-portfolio-title {
   font-weight: 100;
   font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 5vw;
   color: white;
   text-align: center;
+  text-align: center;
 }
 
-.main-page-header {
+.d-navbar-spacer {
+  width: 100%;
+  height: 56px;
+}
+
+.d-main-page-header {
   display: flex;
   width: 100%;
   padding: 5px;
@@ -56,9 +79,133 @@
   justify-content: center;
 }
 
-.main-page-header-name {
+.d-main-page-header-name {
   font-weight: 100;
   color: black;
   font-size: 5vw;
   font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.d-section-header {
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+  color: black;
+  font-size: 2.5vw;
+  padding: 3px;
+  font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.d-section-description {
+  width: 100%;
+  text-align: left;
+  font-weight: 350;
+  color: black;
+  font-size: 24px;
+  text-indent: 1em;
+  font-family: "Open Sans","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.d-card-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+  color: black;
+  font-size: 2vw;
+  font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.d-navbar-recolor-a {
+  background-color: white !important;
+}
+
+.d-navbar-recolor-b {
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.d-nav-link {
+  font-family: "Poppins","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.img-gallery {
+  width: 100%;
+}
+
+.d-gallery-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-popup {
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1040;
+}
+
+.d-popup.active {
+  display: flex;
+}
+
+/* Popup content shrinks to fit image */
+.d-popup-content {
+  position: relative;
+  display: inline-block;
+}
+
+/* Image resizes but keeps 50px gap */
+.d-popup-content img {
+  max-width: calc(100vw - 100px);
+  max-height: calc(100vh - 100px);
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* Close button on top-right corner of image */
+.d-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.d-modal {
+  object-fit: contain;
+}
+
+.d-modal-dialog {
+  display: flex;
+  max-width: 100%;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-modal-content {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  object-fit: contain;
+  padding: 0.5em;
+}
+
+.imagepreview {
+  max-width: calc(100vw - 3.5rem - 1em);
+  max-height: calc(100vh - 3.5rem - 1.5em - 1em);
+  width: auto;
+  height: auto;
+  display: block;
 }
