@@ -38,18 +38,52 @@
         <div class="d-navbar-spacer"></div>
         <div id="d-head">
             <div class="d-main-page-header">
-                <p class="d-main-page-header-name">Trophy</p>
+                <p class="d-main-page-header-name">Toys</p>
             </div>
         </div>
         <div class="container d-gallery-container">
-            <p class="d-section-description">A story about a misfortunate hunter. Created as a student project at the National Academy of Art, Sofia, Bulgaria.</p>
-            <p class="d-section-description"><b>Tool</b>: Adobe Animate</p>
-            <video width="100%" poster="../assets/works/animation/poster-video.jpg" controls>
-              <source src="../assets/works/animation/Trofej.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <p class="d-section-description">Designs of plush  toys. Created as student projects at the National Academy of Art, Sofia, Bulgaria.</p>
+            <p class="d-section-description"><b>Tool</b>: Blender</p>
+            <div class="row">
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="pop d-card d-art-card">
+                        <div class="d-card-overlay"></div>
+                        <img src="../assets/works/toys/Chicken.png" class="img-gallery">
+                        <div class="d-card-title">Chicken</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="pop d-card d-art-card">
+                        <div class="d-card-overlay"></div>
+                        <img src="../assets/works/toys/Goat.png" class="img-gallery">
+                        <div class="d-card-title">Goat</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="pop d-card d-art-card">
+                        <div class="d-card-overlay"></div>
+                        <img src="../assets/works/toys/Pony.png" class="img-gallery">
+                        <div class="d-card-title">Pony</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-4">
+                    <div class="pop d-card d-art-card">
+                        <div class="d-card-overlay"></div>
+                        <img src="../assets/works/toys/Bunny.png" class="img-gallery">
+                        <div class="d-card-title">Bunny</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Image preview modal -->
+        <div class="modal d-modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-modal-dialog" data-dismiss="modal">
+                <div class="modal-content d-modal-content">              
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" class="imagepreview" style="width: 100%;" >
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
